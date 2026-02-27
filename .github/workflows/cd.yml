@@ -73,6 +73,6 @@ jobs:
       - name: Update ECS service
         run: |
           aws ecs update-service \
-            --cluster devops-workshop-cluster \
+            --cluster devops_workshop_cluster \
             --service devops_workshop_service \
             --task-definition $TASK_ARN
